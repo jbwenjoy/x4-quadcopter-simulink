@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="04/23/22||15:26:40" using="Simscape Multibody Link Version 7.4" from="SolidWorks 29.5.1"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="4rotor_assembly" uid="4rotor_assembly" version="208">
+<AssemblyFile name="4rotor_assembly.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="base_fight_first2-3" uid="base_fight_first2-3" entityUid="base_fight_first2*:*默认">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0 0 0</Translation>
+</Transform>
+<VisualProperties>
+<Ambient r="0.37254901960784315" g="0.37254901960784315" b="0.37254901960784315" a="1"/>
+<Diffuse r="0.37254901960784315" g="0.37254901960784315" b="0.37254901960784315" a="1"/>
+<Specular r="0.18627450980392157" g="0.18627450980392157" b="0.18627450980392157" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Instance>
+<Instance name="55mm_paddle_clockwise - 1-2" uid="55mm_paddle_clockwise - 1-2" entityUid="55mm_paddle_clockwise - 1*:*默认">
+<Transform>
+<Rotation>1 0 0 0 0 1 0 -1 0</Rotation>
+<Translation>0.13 -0.029999999999999999 -0.0080000000000000002</Translation>
+</Transform>
+</Instance>
+<Instance name="55mm_paddle_counter_clock - 4-2" uid="55mm_paddle_counter_clock - 4-2" entityUid="55mm_paddle_counter_clock - 4*:*默认">
+<Transform>
+<Rotation>1 0 0 0 1.224646799147352e-16 1 0 -1 1.224646799147352e-16</Rotation>
+<Translation>-0.029999999999999995 -0.030000000000000002 -0.0079999999999999967</Translation>
+</Transform>
+</Instance>
+<Instance name="55mm_paddle_counter_clock - 2-2" uid="55mm_paddle_counter_clock - 2-2" entityUid="55mm_paddle_counter_clock - 2*:*默认">
+<Transform>
+<Rotation>1 0 0 0 0 1 0 -1 0</Rotation>
+<Translation>0.029999999999999999 0.029999999999999999 -0.0079999999999999984</Translation>
+</Transform>
+</Instance>
+<Instance name="55mm_paddle_clockwise - 3-2" uid="55mm_paddle_clockwise - 3-2" entityUid="55mm_paddle_clockwise - 3*:*默认">
+<Transform>
+<Rotation>1 0 0 0 0 1 0 -1 0</Rotation>
+<Translation>0.070000000000000007 0.029999999999999985 -0.0079999999999999984</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="重合1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base_fight_first2-3</Uid>
+</InstancePath>
+<Position>0.029999999999999999 -0.029999999999999999 -0.012999999999999999</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>55mm_paddle_clockwise - 1-2</Uid>
+</InstancePath>
+<Position>-0.10000000000000001 0.005000000000000001 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="同心1">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>base_fight_first2-3</Uid>
+</InstancePath>
+<Position>0.029999999999999999 -0.029999999999999999 -0.012999999999999999</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>55mm_paddle_clockwise - 1-2</Uid>
+</InstancePath>
+<Position>-0.10000000000000001 0.002 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="重合2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base_fight_first2-3</Uid>
+</InstancePath>
+<Position>0.029999999999999999 0.029999999999999999 -0.012999999999999999</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>55mm_paddle_counter_clock - 2-2</Uid>
+</InstancePath>
+<Position>0 0.0049999999999999992 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="同心2">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>base_fight_first2-3</Uid>
+</InstancePath>
+<Position>0.029999999999999999 0.029999999999999999 -0.012999999999999999</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>55mm_paddle_counter_clock - 2-2</Uid>
+</InstancePath>
+<Position>0 0.002 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="重合3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base_fight_first2-3</Uid>
+</InstancePath>
+<Position>-0.029999999999999999 0.029999999999999999 -0.012999999999999999</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>55mm_paddle_clockwise - 3-2</Uid>
+</InstancePath>
+<Position>-0.10000000000000001 0.0049999999999999992 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="同心3">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>base_fight_first2-3</Uid>
+</InstancePath>
+<Position>-0.029999999999999999 0.029999999999999999 -0.012999999999999999</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>55mm_paddle_clockwise - 3-2</Uid>
+</InstancePath>
+<Position>-0.10000000000000001 0.002 0</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="重合4">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>base_fight_first2-3</Uid>
+</InstancePath>
+<Position>-0.029999999999999999 -0.029999999999999999 -0.012999999999999999</Position>
+<Axis>0 1.224646799147352e-16 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>55mm_paddle_counter_clock - 4-2</Uid>
+</InstancePath>
+<Position>0 0.005000000000000001 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="同心4">
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>base_fight_first2-3</Uid>
+</InstancePath>
+<Position>-0.029999999999999999 -0.029999999999999999 -0.012999999999999999</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="circle">
+<InstancePath>
+<Uid>55mm_paddle_counter_clock - 4-2</Uid>
+</InstancePath>
+<Position>0 0.002 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="55mm_paddle_clockwise - 1" uid="55mm_paddle_clockwise - 1*:*默认" version="110">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="55mm_paddle_clockwise - 1.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00047455877083004241</Mass>
+<CenterOfMass>-0.10000000706253645 0.0037142622149837824 1.3882623734089194e-06</CenterOfMass>
+<Inertia>7.490777272374646e-08 7.486931366816237e-08 1.6472169306889023e-09 3.1329342406631431e-13 -2.4130081375887303e-10 1.3045581898542479e-13</Inertia>
+</MassProperties>
+<GeometryFile name="55mm_paddle_clockwise - 1_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="0.91764705882352937" b="0.24705882352941178" a="1"/>
+<Diffuse r="1" g="0.91764705882352937" b="0.24705882352941178" a="1"/>
+<Specular r="0.5" g="0.45882352941176469" b="0.12352941176470589" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="55mm_paddle_clockwise - 3" uid="55mm_paddle_clockwise - 3*:*默认" version="109">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="55mm_paddle_clockwise - 3.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00047455877083004241</Mass>
+<CenterOfMass>-0.10000000706253645 0.0037142622149837824 1.3882623734085317e-06</CenterOfMass>
+<Inertia>7.490777272374646e-08 7.486931366816237e-08 1.6472169306889023e-09 3.132934240662874e-13 -2.4130081375887303e-10 1.3045581898544725e-13</Inertia>
+</MassProperties>
+<GeometryFile name="55mm_paddle_clockwise - 3_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="0.20392156862745098" b="0.13725490196078433" a="1"/>
+<Diffuse r="1" g="0.20392156862745098" b="0.13725490196078433" a="1"/>
+<Specular r="0.5" g="0.10196078431372549" b="0.068627450980392163" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="55mm_paddle_counter_clock - 2" uid="55mm_paddle_counter_clock - 2*:*默认" version="140">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="55mm_paddle_counter_clock - 2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00047458321896341169</Mass>
+<CenterOfMass>1.2769080607738007e-07 0.0037143473931113388 1.4188298545544074e-06</CenterOfMass>
+<Inertia>7.4913309751915766e-08 7.4874879578676827e-08 1.6474302912629894e-09 -2.7756518594836503e-14 2.3917278198518088e-10 -2.4748133190051417e-13</Inertia>
+</MassProperties>
+<GeometryFile name="55mm_paddle_counter_clock - 2_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.29411764705882354" g="0.57647058823529407" b="1" a="1"/>
+<Diffuse r="0.29411764705882354" g="0.57647058823529407" b="1" a="1"/>
+<Specular r="0.14705882352941177" g="0.28823529411764703" b="0.5" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="55mm_paddle_counter_clock - 4" uid="55mm_paddle_counter_clock - 4*:*默认" version="140">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="55mm_paddle_counter_clock - 4.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.00047458321896341169</Mass>
+<CenterOfMass>1.2769080607738007e-07 0.0037143473931113388 1.4188298545544074e-06</CenterOfMass>
+<Inertia>7.4913309751915766e-08 7.4874879578676827e-08 1.6474302912629894e-09 -2.7756518594791592e-14 2.3917278198518088e-10 -2.4748133190051417e-13</Inertia>
+</MassProperties>
+<GeometryFile name="55mm_paddle_counter_clock - 4_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.082352941176470587" g="1" b="0.074509803921568626" a="1"/>
+<Diffuse r="0.082352941176470587" g="1" b="0.074509803921568626" a="1"/>
+<Specular r="0.041176470588235294" g="0.5" b="0.037254901960784313" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+<Part name="base_fight_first2" uid="base_fight_first2*:*默认" version="121">
+<ModelUnits mass="kilogram" length="meter"/>
+<PartFile name="base_fight_first2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.021302804290739188</Mass>
+<CenterOfMass>0 0 0.0042940130527286142</CenterOfMass>
+<Inertia>1.7418143875735214e-05 1.7418143875735197e-05 3.3439472090478447e-05 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="base_fight_first2_默认_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="1" g="1" b="1" a="1"/>
+<Diffuse r="1" g="1" b="1" a="1"/>
+<Specular r="1" g="1" b="1" a="1"/>
+<Emissive r="0.050000000000000003" g="0.050000000000000003" b="0.050000000000000003" a="1"/>
+<Shininess>0.3125</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
